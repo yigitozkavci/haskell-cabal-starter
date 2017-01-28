@@ -2,7 +2,7 @@
 A boilerplate for a haskell-cabal library with tests included
 
 ## Getting Started
-To develop a haskell package utilising cabal, you should first create a sandbox for dev environment.
+After cloning the repository, run these commands:
 
 ```
 # Create `cabal.sandbox.config` and actual sandbox in `.cabal-sandbox/`
@@ -15,7 +15,7 @@ cabal configure
 cabal test
 ```
 
-After you successfully completed the steps, you should see something like this:
+After you successfully completed the steps above, you should see something like this:
 
 ```
 Test suite tests: RUNNING...
