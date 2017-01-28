@@ -2,7 +2,9 @@
 A boilerplate for a haskell-cabal library with tests included
 
 ## Getting Started
-After cloning the repository, run these commands:
+This is a project in which there is the `App.hs` consuming the library `Haq.hs`. We are interested in building and testing `Haq.hs` library.
+
+After cloning the repository, run these commands to get started:
 
 ```
 # Create `cabal.sandbox.config` and actual sandbox in `.cabal-sandbox/`
@@ -18,24 +20,27 @@ cabal test
 After you successfully completed the steps above, you should see something like this:
 
 ```
+Running 1 test suites...
 Test suite tests: RUNNING...
 
 Validate haqify function
   haqify is supposed to prefix Haq! to things
-Falsely validate haqify function
-  haqify is not supposed to prefix Haq! to things FAILED [1]
+Also validate haqify function
+  haqify is supposed to prefix NonHaq! to things FAILED [1]
 
 Failures:
 
   tests/HSpecTests.hs:13:
-  1) Falsely validate haqify function haqify is not supposed to prefix Haq! to things
+  1) Also validate haqify function haqify is supposed to prefix NonHaq! to things
        expected: "NonHaq! me"
         but got: "Haq! me"
 
-Randomized with seed 2130054027
+Randomized with seed 501962637
 
-Finished in 0.0097 seconds
+Finished in 0.0089 seconds
 2 examples, 1 failure
+Test suite tests: FAIL
+Test suite logged to: dist/test/haq-0.1.0.0-tests.log
 ```
 
 Now you can start with fixing the wrong spec. Happy hacking!
