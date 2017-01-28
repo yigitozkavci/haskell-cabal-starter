@@ -8,6 +8,6 @@ main = hspec $ do
   describe "Validate haqify function" $
     it "haqify is supposed to prefix Haq! to things" $
       haqify "me" `shouldBe` "Haq! me"
-  describe "Falsely validate haqify function" $
-    it "haqify is not supposed to prefix Haq! to things" $
+  describe "Also validate haqify function" $
+    it "haqify is supposed to prefix NonHaq! to things" $
       haqify "me" `shouldBe` "NonHaq! me"
