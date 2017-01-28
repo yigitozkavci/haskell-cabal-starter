@@ -44,3 +44,6 @@ Test suite logged to: dist/test/haq-0.1.0.0-tests.log
 ```
 
 Now you can start with fixing the wrong spec. Happy hacking!
+
+## LICENSE
+This project is protected(!) under [WTFPL LICENSE](LICENSE).
