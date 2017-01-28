@@ -2,7 +2,7 @@
 A boilerplate for a haskell-cabal library with tests included
 
 ## Getting Started
-This is a project in which there is the `App.hs` consuming the library `Haq.hs`. We are interested in building and testing `Haq.hs` library.
+This is a project in which there is the library `Haq.hs`. We are interested in building and testing this library.
 
 After cloning the repository, run these commands to get started:
 
